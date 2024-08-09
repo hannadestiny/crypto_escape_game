@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{% static 'enigma/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}" />
+
+    <style type="text/css">
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        ul.icons {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;  
+        }
+
+        ul.icons li {
+            list-style: none;
+        }
+
+        article {
+            background-color: #222;
+            width: 70%;
+            min-height: 40vh;
+            border-radius: 10px;
+            box-shadow: 0 0 7px #111;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a.icon {
+            text-decoration: none;
+            color: #ccc;
+            display: block;
+            margin: 15px;
+            text-align: center;
+            max-width: 180px; 
+            font-size: 19px; 
+        }
+
+        a.icon img {
+            width: 160px; 
+            height: 160px;  
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        a.icon:hover {
+            color: #fff;
+            text-shadow: 0 0 7px #000;
+        }
+
+        a.icon:active {
+            color:#008884;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="{% url 'home' %}" class="in">Accueil</a></li>
+        <li><a href="{% url 'decode' %}">Enigma</a></li>
+        <li><a href="{% url 'mdp' %}">Analyse Frequentielle</a></li>
+    </ul>
+</nav>
+
+<section>
+
+    <article>
+
+        <ul class="icons">
+            <li>
+                <a href="{% url 'corrige_ds' %}" class="icon">
+                    <img src="{% static 'images/corrige_ds.png' %}" alt="corrige_ds">
+                    corrige_ds.txt
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'mdp' %}" class="icon">
+                    <img src="{% static 'images/analyse_frequentielle.png' %}" alt="Analyse fréquentielle">
+                    Analyse fréquentielle
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'decode' %}" class="icon">
+                    <img src="{% static 'images/enigma.png' %}" alt="Enigma">
+                    Enigma
+                </a>
+            </li>
+        </ul>
+
+    </article>
+
+</section>
+
+</body>
+</html>
+

@@ -1,3 +1,5 @@
+
+
 # Crypto Escape Game
 
 ## Vue d'ensemble
@@ -20,9 +22,23 @@ python3 --version
 
 Si Python n'est pas installé, téléchargez et installez-le depuis le [site officiel de Python](https://www.python.org/downloads/).
 
-### 2. Installer Django
+### 2. Cloner le dépôt Git
 
-Une fois que Python est installé, la prochaine étape consiste à installer Django. Exécutez la commande suivante dans votre terminal ou invite de commande :
+Clonez le dépôt Git du projet sur votre machine en exécutant la commande suivante dans le terminal ou l'invite de commande :
+
+```bash
+git clone https://github.com/hannadestiny/crypto_escape_game.git
+```
+
+Remplacez `votre-utilisateur` par votre nom d'utilisateur GitHub ou l'URL appropriée si le dépôt est hébergé ailleurs. Ensuite, accédez au répertoire du projet cloné :
+
+```bash
+cd crypto_escape_game
+```
+
+### 3. Installer Django
+
+Une fois que Python est installé et le projet cloné, la prochaine étape consiste à installer Django. Exécutez la commande suivante dans votre terminal ou invite de commande :
 
 ```bash
 pip install django
@@ -35,7 +51,7 @@ Cette commande téléchargera et installera la dernière version de Django, le f
 Avec Django installé, vous êtes maintenant prêt à démarrer l'application.
 
 ### 1. Ouvrir un terminal ou une invite de commande
-Accédez au répertoire où l'application est située
+Accédez au répertoire où l'application est située en utilisant la commande `cd` mentionnée précédemment.
 
 ### 2. Démarrer le serveur de développement
 

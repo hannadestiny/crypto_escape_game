@@ -30,8 +30,6 @@ Clonez le dépôt Git du projet sur votre machine en exécutant la commande suiv
 git clone https://github.com/hannadestiny/crypto_escape_game.git
 ```
 
-Remplacez `votre-utilisateur` par votre nom d'utilisateur GitHub ou l'URL appropriée si le dépôt est hébergé ailleurs. Ensuite, accédez au répertoire du projet cloné :
-
 ```bash
 cd crypto_escape_game
 ```
